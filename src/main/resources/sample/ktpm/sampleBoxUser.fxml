@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="563.0" prefWidth="1089.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ktpm.ControllerBoxUser">
+   <children>
+      <Label layoutX="55.0" layoutY="88.0" text="Họ và tên" />
+      <Label layoutX="55.0" layoutY="132.0" text="Năm sinh" />
+      <Label layoutX="55.0" layoutY="176.0" text="Giới tính" />
+      <Label layoutX="466.0" layoutY="24.0" text="Thêm thông tin">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="219.0" text="Địa chỉ" />
+      <TextField fx:id="txtHoVaTen" layoutX="179.0" layoutY="83.0" promptText="Họ và tên" />
+      <TextField fx:id="txtNamsinh" layoutX="179.0" layoutY="128.0" promptText="Năm sinh" />
+      <TextField fx:id="txtGioiTinh" layoutX="179.0" layoutY="171.0" promptText="Giới tính" />
+      <TextField fx:id="txtDiaChi" layoutX="179.0" layoutY="214.0" promptText="Địa chỉ" />
+      <Label layoutX="426.0" layoutY="88.0" text="Biểu hiện" />
+      <CheckBox fx:id="boxHo" layoutX="562.0" layoutY="88.0" mnemonicParsing="false" text="Ho" />
+      <CheckBox fx:id="boxSot" layoutX="673.0" layoutY="88.0" mnemonicParsing="false" text="Sốt" />
+      <CheckBox fx:id="boxKhotho" layoutX="795.0" layoutY="88.0" mnemonicParsing="false" text="Khó thở" />
+      <Label layoutX="426.0" layoutY="133.0" text="Tiếp xúc với người bệnh" />
+      <RadioButton fx:id="radioCoTX" layoutX="676.0" layoutY="133.0" mnemonicParsing="false" text="Có">
+         <toggleGroup>
+            <ToggleGroup fx:id="TXuc" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioKhongTX" layoutX="795.0" layoutY="132.0" mnemonicParsing="false" text="Không" toggleGroup="$TXuc" />
+      <Label layoutX="426.0" layoutY="177.0" text="Mức độ" />
+      <RadioButton fx:id="radioF0" layoutX="560.0" layoutY="177.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="53.0" text="F0">
+         <toggleGroup>
+            <ToggleGroup fx:id="MDo" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioF1" layoutX="677.0" layoutY="176.0" mnemonicParsing="false" text="F1" toggleGroup="$MDo" />
+      <RadioButton fx:id="radioF2" layoutX="795.0" layoutY="177.0" mnemonicParsing="false" text="F2" toggleGroup="$MDo" />
+      <Label layoutX="426.0" layoutY="219.0" prefHeight="21.0" prefWidth="112.0" text="Hình thức test" />
+      <RadioButton fx:id="radioPCR" layoutX="558.0" layoutY="219.0" mnemonicParsing="false" text="RT-PCR">
+         <toggleGroup>
+            <ToggleGroup fx:id="Hthuc" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioTestNhanh" layoutX="675.0" layoutY="219.0" mnemonicParsing="false" text="Test nhanh" toggleGroup="$Hthuc" />
+      <Label layoutX="55.0" layoutY="266.0" text="Thời gian test" />
+      <Label layoutX="55.0" layoutY="309.0" text="Nơi test" />
+      <Label layoutX="55.0" layoutY="356.0" text="Thời gian cách ly" />
+      <Label layoutX="51.0" layoutY="404.0" text="  Nơi cách ly" />
+      <TextField fx:id="txtThoiGianTest" layoutX="179.0" layoutY="261.0" promptText="Thời gian test" />
+      <TextField fx:id="txtNoiTest" layoutX="179.0" layoutY="304.0" promptText="Nơi test" />
+      <TextField fx:id="txtThoiGianCachLy" layoutX="179.0" layoutY="351.0" promptText="Thời gian cách ly" />
+      <TextField fx:id="txtNoiCachLy" layoutX="179.0" layoutY="399.0" promptText="Nơi cách ly" />
+      <Label layoutX="426.0" layoutY="266.0" text="Test covid" />
+      <Label layoutX="426.0" layoutY="309.0" text="Tình trạng" />
+      <Label layoutX="426.0" layoutY="356.0" text="Cách ly" />
+      <CheckBox fx:id="boxKhong" layoutX="928.0" layoutY="88.0" mnemonicParsing="false" text="Không" />
+      <RadioButton fx:id="radioKhongHT" layoutX="795.0" layoutY="219.0" mnemonicParsing="false" text="Không" toggleGroup="$Hthuc" />
+      <RadioButton fx:id="radioDaTest" layoutX="555.0" layoutY="267.0" mnemonicParsing="false" text="Đã test">
+         <toggleGroup>
+            <ToggleGroup fx:id="TCovid" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioChuaTest" layoutX="675.0" layoutY="266.0" mnemonicParsing="false" text="Chưa test" toggleGroup="$TCovid" />
+      <RadioButton fx:id="radioAmTinh" layoutX="555.0" layoutY="309.0" mnemonicParsing="false" text="Âm tính">
+         <toggleGroup>
+            <ToggleGroup fx:id="TTrang" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioDuongTinh" layoutX="675.0" layoutY="309.0" mnemonicParsing="false" text="Dương tính" toggleGroup="$TTrang" />
+      <RadioButton fx:id="radioKhongTT" layoutX="817.0" layoutY="309.0" mnemonicParsing="false" text="Không" toggleGroup="$TTrang" />
+      <RadioButton fx:id="radioCoCL" layoutX="555.0" layoutY="356.0" mnemonicParsing="false" text="Có">
+         <toggleGroup>
+            <ToggleGroup fx:id="CLy" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioKhongCL" layoutX="677.0" layoutY="356.0" mnemonicParsing="false" text="Không" toggleGroup="$CLy" />
+      <Button layoutX="351.0" layoutY="470.0" mnemonicParsing="false" onAction="#Add" text="Thêm">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/them01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="489.0" layoutY="470.0" mnemonicParsing="false" onAction="#Reset" text="RESET">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/reset.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="623.0" layoutY="470.0" mnemonicParsing="false" onAction="#BackToTable">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/back4.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <RadioButton fx:id="radioKhongMD" layoutX="929.0" layoutY="176.0" mnemonicParsing="false" text="Không" toggleGroup="$MDo" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="595.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ktpm.ControllerTaiSanNVH">
+   <children>
+      <TextField fx:id="txtSTT" layoutX="956.0" layoutY="79.0" promptText="STT" />
+      <TextField fx:id="txtTen" layoutX="956.0" layoutY="128.0" promptText="Cơ sở vật chất" />
+      <TextField fx:id="txtSoLuong" layoutX="956.0" layoutY="179.0" prefHeight="31.0" prefWidth="187.0" promptText="Số lượng " />
+      <Button layoutX="801.0" layoutY="388.0" mnemonicParsing="false" onAction="#Them" text="Thêm">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/them02.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="799.0" layoutY="457.0" mnemonicParsing="false" onAction="#Xoa" text="Xóa">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/delete.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="921.0" layoutY="388.0" mnemonicParsing="false" onAction="#CapNhat" text="Cập nhật">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/luu.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="1067.0" layoutY="388.0" mnemonicParsing="false" onAction="#Reset" text="Reset">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/reset.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="922.0" layoutY="457.0" mnemonicParsing="false" onAction="#BackToNVH">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/back4.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <ComboBox fx:id="cbTinhTrang" layoutX="956.0" layoutY="275.0" prefHeight="31.0" prefWidth="187.0" promptText="Tình trạng" />
+      <Label layoutX="812.0" layoutY="133.0" />
+      <Label layoutX="812.0" layoutY="327.0" text="Ngày" />
+      <Label layoutX="807.0" layoutY="280.0" text="Tình trạng" />
+      <ImageView fitHeight="45.0" fitWidth="167.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/timkiem.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtKeyword" layoutX="178.0" layoutY="33.0" prefHeight="31.0" prefWidth="549.0" promptText="Nhập từ khóa" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="78.0" onMouseClicked="#chon" prefHeight="474.0" prefWidth="758.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="STT" />
+          <TableColumn fx:id="tenColumn" prefWidth="157.0" text="Cơ sở vật chất" />
+            <TableColumn fx:id="soLuongColumn" prefWidth="105.0" text="Số lượng" />
+            <TableColumn fx:id="tangColumn" prefWidth="102.0" text="Tầng" />
+            <TableColumn fx:id="tinhTrangColumn" prefWidth="173.0" text="Tình trạng" />
+            <TableColumn fx:id="ngayColumn" prefWidth="145.0" text="Ngày" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cbTang" layoutX="956.0" layoutY="228.0" prefHeight="31.0" prefWidth="187.0" promptText="Tầng" />
+      <Label layoutX="807.0" layoutY="133.0" text="Cơ sở vật chất" />
+      <Label layoutX="807.0" layoutY="184.0" text="Số lượng" />
+      <Label layoutX="806.0" layoutY="233.0" text="Tầng" />
+      <Label layoutX="806.0" layoutY="84.0" text="STT" />
+      <DatePicker fx:id="dateNgay" layoutX="958.0" layoutY="322.0" prefHeight="31.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>

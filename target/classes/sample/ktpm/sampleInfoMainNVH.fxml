@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="541.0" prefWidth="1252.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ktpm.ControllerInfoMainNVH">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="72.0" onMouseClicked="#chon" prefHeight="446.0" prefWidth="828.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="56.0" text="STT" />
+          <TableColumn fx:id="hoatDongColumn" minWidth="0.0" prefWidth="219.0" text="Hoạt động" />
+          <TableColumn fx:id="tangColumn" prefWidth="64.0" text="Tầng" />
+            <TableColumn fx:id="daiDienThueColumn" prefWidth="140.0" text="Đại diện thuê" />
+            <TableColumn fx:id="ngayThueColumn" prefWidth="147.0" text="Ngày thuê" />
+            <TableColumn fx:id="chiPhiColumn" prefWidth="96.0" text="Chi phí" />
+            <TableColumn fx:id="pheDuyetColumn" prefWidth="105.0" text="Phê duyệt" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSTT" layoutX="921.0" layoutY="49.0" prefHeight="31.0" prefWidth="258.0" promptText="STT" />
+      <TextField fx:id="txtHoatDong" layoutX="921.0" layoutY="100.0" prefHeight="31.0" prefWidth="258.0" promptText="Hoạt động" />
+      <TextField fx:id="txtDaiDienThue" layoutX="921.0" layoutY="196.0" prefHeight="31.0" prefWidth="258.0" promptText="Đại diện thuê" />
+      <TextField fx:id="txtChiPhi" layoutX="921.0" layoutY="291.0" prefHeight="31.0" prefWidth="258.0" promptText="Chi phí" />
+      <ComboBox fx:id="cbPheDuyet" layoutX="921.0" layoutY="343.0" prefHeight="31.0" prefWidth="258.0" promptText="Phê duyệt" />
+      <Button layoutX="896.0" layoutY="395.0" mnemonicParsing="false" onAction="#Them" text="Thêm">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/them01.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="1029.0" layoutY="457.0" mnemonicParsing="false" onAction="#Xoa" text="Xóa">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/delete.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="1121.0" layoutY="457.0" mnemonicParsing="false" onAction="#Reset" text="Reset">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/reset1.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="896.0" layoutY="457.0" mnemonicParsing="false" onAction="#CapNhat" text="Cập nhật">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/luu.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="1023.0" layoutY="395.0" mnemonicParsing="false" onAction="#quanLiCoSoVatChat" text="Quản lí cơ sở vật chất">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/quanli.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <ImageView fitHeight="45.0" fitWidth="165.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/timkiem.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtKeyword" layoutX="188.0" layoutY="27.0" prefHeight="31.0" prefWidth="609.0" promptText="Nhập từ khóa" />
+      <DatePicker fx:id="dateNgayThue" layoutX="921.0" layoutY="246.0" prefHeight="31.0" prefWidth="258.0" promptText="Ngày thuê" />
+      <ComboBox fx:id="cbTang" layoutX="921.0" layoutY="147.0" prefHeight="31.0" prefWidth="258.0" promptText="Tầng" />
+   </children>
+</AnchorPane>

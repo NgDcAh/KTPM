@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ktpm.ControllerLogin">
+   <children>
+      <Button layoutX="107.0" layoutY="270.0" mnemonicParsing="false" onAction="#SingIn" text="Đăng nhập">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/dangnhap.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="264.0" layoutY="270.0" mnemonicParsing="false" onAction="#Reset" text="Reset">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/reset1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="137.0" layoutY="139.0" text="Username" />
+      <Label layoutX="137.0" layoutY="190.0" text="Password" />
+      <TextField fx:id="txtUserName" layoutX="253.0" layoutY="134.0" promptText="Username" />
+      <PasswordField fx:id="txtPassword" layoutX="253.0" layoutY="185.0" promptText="Password" />
+      <Button layoutX="392.0" layoutY="270.0" mnemonicParsing="false" onAction="#QuayLai" text="Quay lại">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="116.0" fitWidth="158.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/signup.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

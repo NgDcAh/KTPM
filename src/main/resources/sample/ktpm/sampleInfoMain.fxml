@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="561.0" prefWidth="958.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ktpm.ControllerInfoMain">
+   <children>
+      <TableView fx:id="tableView" layoutX="7.0" layoutY="81.0" prefHeight="406.0" prefWidth="937.0">
+
+        <columns>
+          <TableColumn fx:id="tableColumnId" minWidth="0.0" prefWidth="0.0" text="ID" />
+          <TableColumn fx:id="tableColumnName" minWidth="0.0" prefWidth="124.0" text="Họ và tên" />
+            <TableColumn fx:id="tableColumnYearOfBirth" minWidth="0.0" prefWidth="254.0" text="Năm sinh" />
+            <TableColumn fx:id="tableColumnGender" prefWidth="151.0" text="Giới tính" />
+            <TableColumn fx:id="tableColumnAddress" prefWidth="463.0" text="Địa chỉ" />
+            <TableColumn fx:id="tableColumntgTest" minWidth="0.0" prefWidth="0.0" text="Time Test" />
+            <TableColumn fx:id="tableColumnBieuHien" minWidth="0.0" prefWidth="22.0" text="Biểu hiện" />
+            <TableColumn fx:id="tableColumnTiepXuc" minWidth="0.0" prefWidth="53.0" text="Tiếp xúc" />
+            <TableColumn fx:id="tableColumnMucDo" prefWidth="75.0" text="Mức Độ" />
+            <TableColumn fx:id="tableColumnTestCovid" prefWidth="75.0" text="Test Covid" />
+            <TableColumn fx:id="tableColumnNoiTest" prefWidth="75.0" text="Nơi test" />
+            <TableColumn fx:id="tableColumnCachLy" prefWidth="75.0" text="Cách ly" />
+            <TableColumn fx:id="tableColumntgCachLy" prefWidth="75.0" text="Time cách ly" />
+            <TableColumn fx:id="tableColumnNoiCachLy" prefWidth="75.0" text="Nơi cách ly" />
+            <TableColumn fx:id="tableColumnhtTest" prefWidth="75.0" text="Hình thức test" />
+            <TableColumn fx:id="tableColumnTinhTrang" prefWidth="75.0" text="Tình trạng" />
+        </columns>
+      </TableView>
+      <Button layoutX="316.0" layoutY="502.0" mnemonicParsing="false" onAction="#Add" text="Thêm">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/them01.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="439.0" layoutY="502.0" mnemonicParsing="false" onAction="#Delete" text="Xóa">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/delete.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="550.0" layoutY="502.0" mnemonicParsing="false" onAction="#Update" text="Cập nhật">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/luu1.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button layoutX="695.0" layoutY="502.0" mnemonicParsing="false" onAction="#QuayLai">
+          <graphic>
+              <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="51.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@image/back4.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <ImageView fitHeight="61.0" fitWidth="137.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/timkiem.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtKeyword" layoutX="164.0" layoutY="29.0" prefHeight="31.0" prefWidth="512.0" promptText="Nhập từ khóa" />
+   </children>
+</AnchorPane>
